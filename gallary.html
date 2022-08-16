@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="HandheldFriendly" content="true">
+    <script src="https://kit.fontawesome.com/cb3dfee5e7.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./images/logo (2).jpg" type="image/icon type">
+    <title>Gallary</title>
+</head>
+<style>
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  background-image: url(./images/ab2.jpg);
+  scroll-behavior: smooth;
+}
+h1 {
+  color:snow;
+  text-shadow: 2px 3px grey;
+}
+.grid-container {
+  columns: 5 200px;
+  column-gap: 1rem;
+  width: 90%;
+  margin: 0 3px;
+  margin-left:3px;
+}
+  .pqr {
+    width: 200px;
+    margin: 0 1.5rem 1.5rem 0;
+    display: inline-block;
+    width: 100%;
+    border: solid 2px black;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    border-radius: 5px;
+    transition: all .25s ease-in-out;
+  }
+    .pqr:hover img {
+      filter: grayscale(0);
+    }
+    .pqr:hover {
+      border-color: white;
+      border-width: 3px;
+    }
+    img {
+      width: 90%;
+      filter: grayscale(100%);
+      border-radius: 5px;
+      transition: all .25s ease-in-out;
+    }
+    p {
+      margin: 5px 0;
+      padding: 0;
+      text-align: center;
+      font-style: italic;
+    }
+ footer{
+	margin-top:10%;
+}
+.footer-distributed{
+	background-color: #292c2f;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+   padding: 55px 50px;
+	margin-top: 80px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+.footer-distributed .footer-left{
+  width: 40%;
+}
+ 
+.footer-distributed h3{
+	color:  #ffffff;
+  font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+ 
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+ 
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+ 
+.footer-distributed .footer-right{
+	width: 20%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+ 
+  margin-right: 2px;
+	margin-bottom: 5px;
+}
+ 
+ 
+@media (max-width: 880px) {
+ 
+	.footer-distributed{
+    font: bold 14px sans-serif;
+	}
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+    width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+	.main {
+		line-height: normal;
+		font-size: auto;
+	}
+ 
+}
+input[type=submit]:hover {
+  background-color:#fff;
+  color:#004;
+}
+
+.container_2 {
+  border-radius: 5px;
+  padding: 20px;
+}
+.footer-left .log{
+left:10vw;
+float:left;
+display:fixed;
+width: 5vw;
+height: 10vh;
+border-radius:50%;
+}
+
+</style>
+
+
+
+<body>
+    <h1> &#10024; Gallery &#10024;</h1>
+<div class="grid-container">
+  <div class="pqr">
+    <img class='grid-item grid-item-1' src="images/9090.jpg" alt=''>
+    <p>"I'm so happy today!"</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-2' src="images/3.jpg" alt=''>
+    <p>"Beautiful scenario."</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-3' src='https://images.unsplash.com/photo-1510771463146-e89e6e86560e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt=''>
+    <p>"I love you so much!"</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-4' src="images/4.png" alt=''>
+    <p>"Perfect capture!"</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-5' src="images/23.jpg" alt=''>
+    <p>"Happy"</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-6' src="images/31.jpg" alt=''>
+    <p>"Beautiful mehendi design!"</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-7' src="images/33.jpg" alt=''>
+    <p>"Colorful painting.Mandala art!"</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-8' src="images/41.jpg" alt=''>
+    <p>"i'm gunna finish that..."</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-9' src="images/35.jpg" alt=''>
+    <p>"friendship goles</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-10' src="images/51.jpg" alt=''>
+    <p>"Cutipie!"</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-11' src="images/52.jpg" alt=''>
+    <p>"ohhh!tigeeerrrr"</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-12' src="images/53.jpg" alt=''>
+    <p>"Dis my fren!"</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-13' src="images/ch.jpg" alt=''>
+    <p>"Dis my fren!"</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-14' src="images/f1.jpg" alt=''>
+    <p>"Dis my fren!"</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-15' src="images/nature.jpg" alt=''>
+    <p>"Dis my fren!"</p>
+  </div>
+  <div class="pqr"> 
+    <img class='grid-item grid-item-16' src="images/d3.jpg" alt=''>
+    <p>"Dis my fren!"</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-17' src="images/i0.jpg" alt=''>
+    <p>"Dis my fren!"</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-18' src="images/insect.jpg" alt=''>
+    <p>"Dis my fren!"</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-19' src="images/fl.jpg" alt=''>
+    <p>"Dis my fren!"</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-20' src="images/gateway.jpg" alt=''>
+    <p>"Dis my fren!"</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-21' src="images/t5.jpg" alt=''>
+    <p>"Dis my fren!"</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-22' src="images/tg.jpg" alt=''>
+    <p>"Dis my fren!"</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-23' src="images/taj.jpg" alt=''>
+    <p>"Dis my fren!"</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-24' src="images/cuti.jpg" alt=''>
+    <p>"Dis my fren!"</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-25' src="images/fl2.jpg" alt=''>
+    <p>"Dis my fren!"</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-26' src="images/p1.jpg" alt=''>
+    <p>"Dis my fren!"</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-27' src="images/p2.jpg" alt=''>
+    <p>"Dis my fren!"</p>
+  </div>
+  <div class="pqr">
+    <img class='grid-item grid-item-28' src="images/fl3.jpg" alt=''>
+    <p>"Dis my fren!"</p>
+  </div>
+</div>
+<footer class="footer-distributed">
+ 
+    <div class="footer-left">
+ <img src="images/logo (2).jpg" alt="logo" class="log">
+    <h3>MY<span>BLOG</span></h3>
+  
+    <p class="footer-links">
+    <a href="index.html">Home</a>
+  ·
+    <a href="index.html #card">Blog</a>
+  ·
+    <a href="index.html #about">About me</a>
+  ·
+     <a href="index.html #photoes">Galaxy</a>
+  ·
+    <a href="index.html #path">At last</a>
+  ·
+    <a href="index.html #contact">Contact</a>
+    </p>
+ 
+    <p class="footer-company-name"> &copy; 2020</p>
+    </div>
+ 
+    <div class="footer-center">
+ 
+    <div>
+    <i class="fa fa-map-marker"></i>
+    <p>India</p>
+    </div> 
+ 
+    <div>
+    <i class="fa fa-phone"></i>
+    <p>+91 9527637594</p>
+    </div>
+ 
+    <div>
+    <i class="fa fa-envelope"></i>
+    <p><a href="mailto:prajaktaraspayale@gmail.com">prajaktaraspayale@gmail.com</a></p>
+    </div>
+ 
+    </div>
+ 
+    <div class="footer-right">
+ 
+    <p class="footer-company-about">
+    <span>About blog</span>
+      Just want to express my travelling experience ...!
+    </p>
+ 
+    <div class="footer-icons">
+ 
+    <a href="https://www.facebook.com/prajakta.raspayle.7"><i class="fa fa-facebook"></i></a>
+    <a href="www.linkedin.com/in/prajakta-raspayle-4017b0148"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.instagram.com/prajakta_raspayle/"><i class="fa fa-instagram"></i></a>
+ 
+    </div>
+ 
+    </div>
+ 
+
+</footer>
+</body>
+</html>
